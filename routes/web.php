@@ -7,6 +7,7 @@ use App\Http\Controllers\JpenjualanController;
 use App\Http\Controllers\MpenjualanController;
 use App\Http\Controllers\TpenjualanController;
 use App\Http\Controllers\PerbandinganpenjualanController;
+use App\Http\Controllers\TelegramController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,4 +40,6 @@ Route::get('/dokumentasi-web', function () {
     $active = "dokumentasi_web";
     return view('Menutambahan.dokumentasi', compact('active'));
 });
+
+Route::post('/send-telegram-message', [TelegramController::class, 'sendMessage']);
 // Menu Tambahan

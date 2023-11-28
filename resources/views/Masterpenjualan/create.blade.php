@@ -5,7 +5,7 @@
 Aplikasi Data Penjualan
 @endsection
 @section('judul_sub')
-Form Data Penjualan
+Form Data Master Penjualan
 @endsection
 @section('content')
 
@@ -54,9 +54,9 @@ Form Data Penjualan
                                     </div>
                                     @enderror
                                     <div class="mb-3">
-                                        <label class="form-label" for="selectOne">Nama Barang</label>
+                                        <label class="form-label" for="selectOne">Nama Atribut</label>
                                         <select id="selectOne" class="form-select" name="nama_barang_id">
-                                            <option>Masukan Nama Barang</option>
+                                            <option>Masukan Nama Atribut</option>
                                             @foreach ($barang_penjualan as $bp)
                                             <option value="{{ $bp->id }}">{{ $bp->nama_barang }}</option>
                                             @endforeach
@@ -77,7 +77,7 @@ Form Data Penjualan
                                     <div class="mb-3">
                                         <label class="form-label" for="textInput">Jumlah Terjual</label>
                                         <input type="number" id="jumlah_terjual" class="form-control"
-                                            placeholder="Masukan Jumlah Stok" name="jumlah_terjual">
+                                            placeholder="Masukan Jumlah Terjual" name="jumlah_terjual">
                                     </div>
 
                                     <div class="row">

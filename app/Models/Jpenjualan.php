@@ -35,6 +35,6 @@ class Jpenjualan extends Model
 
     public function barang_penjualan()
     {
-        return $this->hasMany('App\Models\Bpenjualan');
+        return $this->hasMany('App\Models\Bpenjualan', 'jenis_penjualan_id');
     }
 }

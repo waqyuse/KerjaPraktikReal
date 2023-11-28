@@ -5,7 +5,7 @@
 Aplikasi Data Penjualan
 @endsection
 @section('judul_sub')
-Form Data Penjualan
+Form Data Penjualan Atribut
 @endsection
 @section('content')
 
@@ -16,7 +16,7 @@ Form Data Penjualan
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="mb-7" id="intro">
-                        <h1 class="mb-2">Edit Data Master Penjualan</h1>
+                        <h1 class="mb-2">Edit Data Master Penjualan Atribut</h1>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ Form Data Penjualan
                                     </div>
                                     @enderror
                                     <div class="mb-3">
-                                        <label class="form-label" for="selectOne">Nama Barang</label>
+                                        <label class="form-label" for="selectOne">Nama Atribut</label>
                                         <select id="selectOne" class="form-select" name="nama_barang_id">
                                             <option>Masukan Nama Barang</option>
                                             @foreach ($barang_penjualan as $bp)

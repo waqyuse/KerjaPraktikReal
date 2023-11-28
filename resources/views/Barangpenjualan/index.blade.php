@@ -2,17 +2,17 @@
 @push('style')
 @endpush
 @section('judul')
-Aplikasi Data Penjualan
+Aplikasi Pengelolaan Atribut
 @endsection
 @section('judul_sub')
-Menu Data Penjualan
+Menu Pengelolaan Data Atribut
 @endsection
 @section('content')
 <div class="py-6">
     <div class="row mb-6">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div id="examples" class="mb-4">
-                <h2>Barang Data Penjualan</h2>
+                <h2>Pengelolaan Data Atribut</h2>
             </div>
             <div class="card">
                 <div class="d-flex justify-content-around mt-3 mb-3 ms-3 me-3">
@@ -43,8 +43,8 @@ Menu Data Penjualan
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">Nama Barang</th>
-                                        <th scope="col">Jenis Barang</th>
+                                        <th scope="col">Nama Atribut</th>
+                                        <th scope="col">Jenis Atribut</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>

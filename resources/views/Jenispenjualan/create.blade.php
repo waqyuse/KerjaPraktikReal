@@ -2,10 +2,10 @@
 @push('style')
 @endpush
 @section('judul')
-Aplikasi Data Penjualan
+Aplikasi Pengelolaan Atribut
 @endsection
 @section('judul_sub')
-Form Data Penjualan
+Form Pengelolaan Data Jenis Atribut
 @endsection
 @section('content')
 
@@ -16,7 +16,7 @@ Form Data Penjualan
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="mb-7" id="intro">
-                        <h1 class="mb-2">Tambah Data Jenis Penjualan</h1>
+                        <h1 class="mb-2">Tambah Data Jenis Atribut</h1>
                     </div>
                 </div>
             </div>
@@ -31,13 +31,13 @@ Form Data Penjualan
                             <div class="col-4 ms-4">
                                 <a href="{{ route('master-penjualan.create') }}"
                                     class="m-2 btn btn-outline-success my-1 btn-sm">
-                                    <i data-feather="plus"></i> Tambah Data Master Penjualan
+                                    <i data-feather="plus"></i> Tambah Data Master Atribut
                                 </a>
                             </div>
                             <div class="col-4 me-4">
                                 <a href="{{ route('barang-penjualan.create') }}"
                                     class="m-2 btn btn-outline-success my-1 btn-sm">
-                                    <i data-feather="plus"></i> Tambah Data Barang Penjualan
+                                    <i data-feather="plus"></i> Tambah Data Atribut
                                 </a>
                             </div>
                         </div>
@@ -54,9 +54,9 @@ Form Data Penjualan
                                             {{ $message }}
                                         </div>
                                         @enderror
-                                        <label class="form-label" for="textInput">Jenis Penjualan</label>
+                                        <label class="form-label" for="textInput">Jenis Atribut Penjualan</label>
                                         <input type="text" id="jenis_penjualan" class="form-control"
-                                            placeholder="Masukan Jenis Penjualan" name="jenis_penjualan">
+                                            placeholder="Masukan Jenis Atribut Penjualan" name="jenis_penjualan">
                                     </div>
                                     <div class="row">
                                         <div class="col">

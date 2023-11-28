@@ -5,14 +5,14 @@
 Aplikasi Data Penjualan
 @endsection
 @section('judul_sub')
-Menu Data Penjualan
+Menu Data Jenis Atribut
 @endsection
 @section('content')
 <div class="py-6">
     <div class="row mb-6">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div id="examples" class="mb-4">
-                <h2>Jenis Data Penjualan</h2>
+                <h2>Data Jenis Atribut</h2>
             </div>
             <div class="card">
                 <div class="d-flex justify-content-around mt-3 mb-3 ms-3 me-3">
@@ -42,7 +42,7 @@ Menu Data Penjualan
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">Jenis Barang</th>
+                                        <th scope="col">Jenis Atribut</th>
                                         <th scope="col">Dibuat</th>
                                         <th scope="col">Diperbarui</th>
                                         <th scope="col">Aksi</th>

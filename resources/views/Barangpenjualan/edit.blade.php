@@ -2,10 +2,10 @@
 @push('style')
 @endpush
 @section('judul')
-Aplikasi Data Penjualan
+Aplikasi Pengelolaan Atribut
 @endsection
 @section('judul_sub')
-Form Data Penjualan
+Form Data Atribut
 @endsection
 @section('content')
 
@@ -16,7 +16,7 @@ Form Data Penjualan
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="mb-7" id="intro">
-                        <h1 class="mb-2">Edit Data Barang Penjualan</h1>
+                        <h1 class="mb-2">Edit Data Pengelolaan Atribut</h1>
                     </div>
                 </div>
             </div>
@@ -29,13 +29,13 @@ Form Data Penjualan
                             <div class="col-4 ms-4">
                                 <a href="{{ route('jenis-penjualan.create') }}"
                                     class="m-2 btn btn-outline-success my-1 btn-sm">
-                                    <i data-feather="plus"></i> Tambah Data Jenis Penjualan
+                                    <i data-feather="plus"></i> Tambah Data Jenis Atribut
                                 </a>
                             </div>
                             <div class="col-4 me-4">
                                 <a href="{{ route('master-penjualan.create') }}"
                                     class="m-2 btn btn-outline-success my-1 btn-sm">
-                                    <i data-feather="plus"></i> Tambah Data Master Penjualan
+                                    <i data-feather="plus"></i> Tambah Data Master Atribut
                                 </a>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ Form Data Penjualan
                                             {{ $message }}
                                         </div>
                                         @enderror
-                                        <label class="form-label" for="textInput">Nama Barang</label>
+                                        <label class="form-label" for="textInput">Nama Atribut</label>
                                         <input type="text" id="nama_barang" class="form-control"
                                             placeholder="Masukan Nama Barang" name="nama_barang"
                                             value="{{ $bpenjualan->nama_barang }}">
@@ -66,9 +66,9 @@ Form Data Penjualan
                                     @enderror
                                     <div class="mb-3">
                                         <label class="form-label" for="selectOne">Jenis
-                                            Barang</label>
+                                            Atribut</label>
                                         <select id="selectOne" class="form-select" name="jenis_penjualan_id">
-                                            <option>Pilih Jenis Barang</option>
+                                            <option>Pilih Jenis Atribut</option>
                                             @foreach ($jenis_p as $jp)
                                             @if ($jp->id === $bpenjualan->jenis_penjualan_id )
                                             <option value="{{ $jp->id }}" selected>{{ $jp->jenis_penjualan }}</option>

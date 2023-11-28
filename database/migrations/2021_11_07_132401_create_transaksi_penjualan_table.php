@@ -15,14 +15,15 @@ class CreateTransaksiPenjualanTable extends Migration
     {
         Schema::create('transaksi_penjualan', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('nama_barang');
             $table->integer('stok');
             $table->integer('jumlah_terjual');
             $table->timestamps();
-            $table->unsignedBigInteger('nama_barang_id');
-            $table->foreign('nama_barang_id')->references('id')->on('master_penjualan');
         });
-    }
 
+        // Comment out the following line:
+        // $table->foreign('nama_barang_id')->references('id')->on('master_penjualan');
+    }
     /**
      * Reverse the migrations.
      *
